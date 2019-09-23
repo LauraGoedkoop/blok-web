@@ -1,0 +1,234 @@
+@font-face {
+    font-family: wonder;
+    src: url(../_font/wonder.ttf);
+}
+
+@font-face {
+    font-family: univers;
+    src: url(../_font/univers.ttf);
+}
+
+/* basis css */
+
+body {
+
+    background-color: #0026cc;
+    margin: 0em;
+}
+
+header {
+    background-color: #0026cc;
+    box-shadow: inset 0 -16px 12px -10px rgba(0, 0, 0, .85);
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+    margin-top: 1em;
+    padding: 0;
+
+}
+
+li{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+li a {
+    color: white;
+    margin: 1rem;
+    text-decoration: none;
+    font-family: "wonder", sans-serif;
+    font-size: 8pt;
+    
+
+}
+
+a:hover {
+    color: #73cd72;
+}
+
+#homeimg {
+    width: 100vw;
+    height: 40vw;
+}
+
+#homeicoon {
+    width: 2vw;
+    height: auto;
+
+}
+
+#banner {
+    object-fit: cover;
+    width: 100vw;
+    height: 50vh;
+}
+
+#bannervideo {
+    object-fit: cover;
+    max-height:60vh;
+    width:100%;
+    margin-bottom: -1vh;
+}
+
+.categorie_balk{
+    background:  #73cd72; 
+    box-shadow: inset 0 -16px 12px -10px rgba(0, 0, 0, .85);
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    padding-left: 50px;
+    margin: 0;
+    
+}
+.categorie_balk li{
+    margin-right: 2vw;
+    margin-left: 1vw;
+    color: white;
+    font-family: "wonder", sans-serif;
+    font-size: 8pt;
+}
+li:hover {
+    color: #0026cc;
+}
+
+main section{
+    background-image: url(../_img/background-section.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 99;
+    width: 100vw;
+    top: 360px;
+
+    
+}
+.programma_img {
+    max-width: 100%;
+    margin-bottom: 3vh;
+}
+
+.icoon{
+    width: 8%;
+    margin-top: 3vh;
+}
+
+   .icoon_muziek{
+    width: 8%;
+    margin-left: 2vh;
+}
+
+.p_artiest{
+    font-family: "wonder", sans-serif;
+    color: white;
+    font-size: 7pt;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.column article {
+    background-color: #73cd72;
+    padding: 1em 4em;
+    margin: 2em 2em;
+    box-shadow: inset 0 0 13px 7px #000;
+    
+}
+
+.h2_artiesten {
+    text-align: left;
+    font-family: "wonder", sans-serif;
+    margin-top: 1vh;
+}
+
+
+footer{
+    background: #0026cc; 
+    padding: 3vh;
+    box-shadow: inset 0px 9px 12px -3px #000
+}
+
+#footer_socialmedia{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#footer_socialmedia li{
+    margin-left: 4vw;
+}
+
+@media (min-width: 700px){
+    .column{      
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    } 
+    .column article{
+    margin: 2em 1em;
+    }
+    
+    .icoon{
+    width: 8%;
+
+}
+
+    .icoon_muziek{
+    width: 9%;
+    margin-top: 3vh;
+}
+    
+    .h2_artiesten{
+    font-size: 15pt;   
+}
+    
+.p_artiest{
+    font-size: 10pt;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+    
+}
+
+@media (min-width: 1200px){
+    .column{      
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+        
+    } 
+.column article{
+    margin: 3em 6em;
+    }
+
+
+.icoon{
+    width: 6%;
+    margin-top: 3vh;
+}
+    
+.icoon_muziek{
+    width: 7%;
+    margin-top: 3vh;
+}
+    
+ .h2_artiesten{
+    font-size: 20pt;   
+}  
+ .p_artiest{
+    font-size: 8pt;
+  
+}
+}
